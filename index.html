@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/1cf17c00b8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>Expenses Manager</title>
+
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center"><i class="fas fa-rupee-sign"></i>
+            <span class="text-danger">Expenses</span> Manager</h1>
+
+        <form id="expense-form">
+            <div class="form-group mt-4">
+                <label for="expense">Expense</label>
+                <input type="text" id="expense" class="form-control">
+            </div>
+            <div class="form-group mt-4">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" class="form-control">
+            </div>
+            <div class="form-group mt-4">
+                <label for="description">Description</label>
+                <input type="text" id="description" class="form-control">
+            </div>
+            <input type="submit" value="Add expense" class="btn btn-primary btn-block">
+        </form>
+
+        <table class="table table-striped mt-4">
+            <thead>
+                <tr>
+                    <th>Expense</th>
+                    <th>Amount</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody id="expense-list"></tbody>
+        </table>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
